@@ -1,0 +1,36 @@
+\documentclass[twocolumn, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage[parfill]{parskip}
+\usepackage[style=ieee]{biblatex}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{lipsum}
+
+\addbibresource{bibliography.bib}
+
+\title{Template Document}
+
+\author{First Last Name\\ \small{\href{mailto:email@mail.com}{email@mail.com}}}
+\date{\today}
+
+\begin{document}
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+     {\lipsum[1-2]}
+     \bigskip
+    \end{abstract}
+  \end{@twocolumnfalse}
+]
+
+\section{Introduction}
+\lipsum[3-7]
+\section{Conclusion}
+\lipsum[8-10]
+
+\printbibliography
+
+\end{document}
